@@ -1,763 +1,1052 @@
 export const creditCardsData = [
-  {
-    id: 1,
-    name: 'RBL Indian Oil Xtra',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=RBL+Indian+Oil+Xtra',
-    features: ['15 Fuel Points per ₹100 at IndianOil stations', '3,000 Fuel Points welcome benefit', 'quarterly milestone rewards'],
-    category: 'Fuel',
-    bank: 'RBL Bank',
-    annualFee: '₹1,500 + GST (Waived on ₹2.75 lakh annual spend)',
-    link: 'https://t.ly/UO4jb'
-  },
-  {
-    id: 2,
-    name: 'RBL Indian oil',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=RBL+Indian+oil',
-    features: ['10 Fuel Points per ₹100 at IOCL', '1 Fuel Point per ₹100 elsewhere', '1,000 points welcome bonus'],
-    category: 'Fuel',
-    bank: 'RBL Bank',
-    annualFee: '₹500 + GST (Waived on ₹1.75 lakh annual spend)',
-    link: 'https://t.ly/CY7bO'
-  },
-  {
-    id: 3,
-    name: 'KIWI',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=KIWI',
-    features: ['Lifetime free', '2% cashback on UPI transactions', 'complimentary lounge access'],
-    category: 'UPI / Cashback',
-    bank: 'Yes Bank',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/NrtQa'
-  },
-  {
-    id: 4,
-    name: 'Federal Scapia',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Federal+Scapia',
-    features: ['Lifetime free', '10-20% Scapia Coins rewards', 'unlimited lounge access', 'zero forex markup'],
-    category: 'Travel / Rewards',
-    bank: 'Federal Bank',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/V8Hfp'
-  },
-  {
-    id: 5,
-    name: 'Yes Bank POP Club',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Yes+Bank+POP+Club',
-    features: ['Zero joining fee', '10 POPcoins per ₹100 online', 'UPI-enabled', 'welcome benefits'],
-    category: 'Lifestyle / UPI',
-    bank: 'Yes Bank',
-    annualFee: '₹399 (Waived on ₹1.5 lakh annual spend)',
-    link: 'https://t.ly/pYlgR'
-  },
-  {
-    id: 6,
-    name: 'Tata Neu HDFC',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Tata+Neu+HDFC',
-    features: ['2% NeuCoins on Tata brands', '1% elsewhere', 'welcome bonus', 'accelerated rewards on Tata purchases'],
-    category: 'Shopping/Rewards',
-    bank: 'HDFC Bank',
-    annualFee: '₹499 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/whoGk'
-  },
-  {
-    id: 7,
-    name: 'Indusind Bajaj Tiger card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Indusind+Bajaj+Tiger+card',
-    features: ['5% cashback on Bajaj Finserv EMI transactions', 'complimentary lounge access', 'reward points on purchases'],
-    category: 'Cashback/Shopping',
-    bank: 'IndusInd Bank',
-    annualFee: '₹499 + GST (Waived on ₹50,000 annual spend)',
-    link: 'https://t.ly/dRTZJ'
-  },
-  {
-    id: 8,
-    name: 'SBI BPCL Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+BPCL+Card',
-    features: ['13x rewards at BPCL fuel stations', '1 reward point per ₹100 spent elsewhere', 'fuel surcharge waiver'],
-    category: 'Fuel',
-    bank: 'SBI',
-    annualFee: '₹499 + GST (Waived on ₹50,000 annual spend)',
-    link: 'https://t.ly/UkzA9'
-  },
-  {
-    id: 9,
-    name: 'HSBC Platinum',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HSBC+Platinum',
-    features: ['5x rewards on dining, hotels, and telecom', 'welcome vouchers', 'fuel surcharge waiver'],
-    category: 'Rewards/Lifestyle',
-    bank: 'HSBC',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/4nU5F'
-  },
-  {
-    id: 10,
-    name: 'Indus Jocata',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Indus+Jocata',
-    features: ['Lifetime free', 'high cashback across categories', 'accelerated rewards', 'fuel surcharge waiver'],
-    category: 'Cashback',
-    bank: 'IndusInd Bank',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/zrFZf'
-  },
-  {
-    id: 11,
-    name: 'HSBC TravelOne',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HSBC+TravelOne',
-    features: ['5x reward points on travel spends', 'complimentary lounge access', 'zero forex markup fees'],
-    category: 'Travel',
-    bank: 'HSBC',
-    annualFee: '₹3,000 + GST',
-    link: 'https://t.ly/SK1-G'
-  },
-  {
-    id: 12,
-    name: 'SBI Cashback card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Cashback+card',
-    features: ['5% cashback on online spends', '1% cashback offline', 'zero surcharge on fuel spends'],
-    category: 'Cashback',
-    bank: 'SBI',
-    annualFee: '₹999 + GST (Waived on ₹2 lakh annual spend)',
-    link: 'https://t.ly/OFRXu'
-  },
-  {
-    id: 13,
-    name: 'SBI Elite Credit Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Elite+Credit+Card',
-    features: ['Premium rewards on dining', 'movies', 'departmental stores', 'international lounge access', 'milestone benefits'],
-    category: 'Premium Lifestyle',
-    bank: 'SBI',
-    annualFee: '₹4,999 + GST',
-    link: 'https://t.ly/kCjLR'
-  },
-  {
-    id: 14,
-    name: 'HSBC Cashback/ Live+ Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HSBC+Cashback/+Live++Credit+card',
-    features: ['1.5% cashback on all online spends', 'no upper limit', 'complimentary offers', 'dining benefits'],
-    category: 'Cashback',
-    bank: 'HSBC',
-    annualFee: '₹750 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/14cU3'
-  },
-  {
-    id: 15,
-    name: 'SBI Miles Credit Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Miles+Credit+Card',
-    features: ['Earn air miles per spend', 'welcome miles', 'lounge access', 'accelerated rewards on travel spends'],
-    category: 'Travel',
-    bank: 'SBI',
-    annualFee: '₹4,999 + GST',
-    link: 'https://t.ly/VPEKv'
-  },
-  {
-    id: 16,
-    name: 'SBI BPCL Octane Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+BPCL+Octane+Card',
-    features: ['25x reward points at BPCL fuel stations', 'welcome bonus points', 'fuel surcharge waiver'],
-    category: 'Fuel',
-    bank: 'SBI',
-    annualFee: '₹1,499 + GST (Waived on ₹2 lakh annual spend)',
-    link: 'https://t.ly/9_zhy'
-  },
-  {
-    id: 17,
-    name: 'SBI Simply IRCTC',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Simply+IRCTC',
-    features: ['Up to 10% rewards on IRCTC bookings', '350 activation reward points', 'railway lounge access'],
-    category: 'Travel/Railways',
-    bank: 'SBI',
-    annualFee: '₹500 + GST',
-    link: 'https://t.ly/p2--l'
-  },
-  {
-    id: 18,
-    name: 'SBI Prime Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Prime+Card',
-    features: ['10x reward points on dining', 'grocery', 'movies', 'lounge access', 'annual milestone rewards'],
-    category: 'Lifestyle/Premium',
-    bank: 'SBI',
-    annualFee: '₹2,999 + GST',
-    link: 'https://t.ly/oadCQ'
-  },
-  {
-    id: 19,
-    name: 'SBI Simply Click',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Simply+Click',
-    features: ['10x reward points on online spends (Amazon, Cleartrip)', 'welcome voucher', 'fuel surcharge waiver'],
-    category: 'Shopping/Online',
-    bank: 'SBI',
-    annualFee: '₹499 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/wE0IQ'
-  },
-  {
-    id: 20,
-    name: 'SBI Simply SAVE',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=SBI+Simply+SAVE',
-    features: ['10 reward points per ₹150 on dining', 'movies', 'groceries; fuel surcharge waiver'],
-    category: 'Rewards/Daily expenses',
-    bank: 'SBI',
-    annualFee: '₹499 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/1bzgv'
-  },
-  {
-    id: 21,
-    name: 'AU Nomo credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=AU+Nomo+credit+card',
-    features: ['Lifetime free card', 'cashback on online spends', 'zero joining fee', 'offers on lifestyle brands'],
-    category: 'Cashback/Lifestyle',
-    bank: 'AU Bank',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/HiR0k'
-  },
-  {
-    id: 22,
-    name: 'Diners Black HDFC Bank Credit Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Diners+Black+HDFC+Bank+Credit+Card',
-    features: ['Premium rewards on travel & dining', 'unlimited lounge access globally', 'annual memberships', 'high reward conversion rates'],
-    category: 'Premium/Lifestyle/Travel',
-    bank: 'HDFC Bank',
-    annualFee: '₹10,000 + GST (Waived on ₹5 lakh annual spend)',
-    link: 'https://t.ly/Br6bI'
-  },
-  {
-    id: 23,
-    name: 'Shoppers Stop Black HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Shoppers+Stop+Black+HDFC+Bank+Credit+card',
-    features: ['20 reward points per ₹150 at Shoppers Stop', 'discounts', 'welcome vouchers', 'complimentary memberships'],
-    category: 'Shopping',
-    bank: 'HDFC Bank',
-    annualFee: '₹5,000 + GST (Waived on ₹5 lakh annual spend)',
-    link: 'https://t.ly/8dn-5'
-  },
-  {
-    id: 24,
-    name: 'HDFC Infinia',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Infinia',
-    features: ['Unlimited lounge access worldwide', 'premium rewards program', 'golf privileges', 'concierge services'],
-    category: 'Premium/Lifestyle',
-    bank: 'HDFC Bank',
-    annualFee: '₹12,500 + GST',
-    link: 'https://t.ly/SQXYf'
-  },
-  {
-    id: 25,
-    name: 'HDFC Bank Regalia / Business Regalia Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Bank+Regalia+/+Business+Regalia+Credit+card',
-    features: ['Premium travel benefits', 'complimentary lounge visits', 'accelerated reward points', 'comprehensive insurance coverage'],
-    category: 'Premium/Travel',
-    bank: 'HDFC Bank',
-    annualFee: '₹2,500 + GST (Waived on ₹3 lakh annual spend)',
-    link: 'https://t.ly/NPBnZ'
-  },
-  {
-    id: 26,
-    name: 'AU Altura',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=AU+Altura',
-    features: ['2 reward points per ₹100', 'railway lounge access', 'cashback on retail transactions', 'fuel surcharge waiver'],
-    category: 'Rewards/Shopping',
-    bank: 'AU Bank',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/1dsb8'
-  },
-  {
-    id: 27,
-    name: 'AU Altura+',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=AU+Altura+',
-    features: ['Higher rewards on dining & groceries', 'airport lounge access', 'milestone benefits', 'fuel surcharge waiver'],
-    category: 'Rewards/Lifestyle',
-    bank: 'AU Bank',
-    annualFee: '₹499 + GST (Waived on ₹40,000 annual spend)',
-    link: 'https://t.ly/1dsb8'
-  },
-  {
-    id: 28,
-    name: 'AU LIT Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=AU+LIT+Card',
-    features: ['Customizable features', '5% cashback on selected categories', 'complimentary memberships', 'fuel surcharge waiver'],
-    category: 'Lifestyle/Customizable',
-    bank: 'AU Bank',
-    annualFee: 'Lifetime Free',
-    link: 'https://t.ly/1dsb8'
-  },
-  {
-    id: 29,
-    name: 'Indusind All Cards',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Indusind+All+Cards',
-    features: ['Premium rewards', 'cashback', 'travel perks', 'lounge access', 'fuel surcharge waiver', 'zero forex markup'],
-    category: 'Premium/Travel/Lifestyle',
-    bank: 'IndusInd Bank',
-    annualFee: 'Varies by Card (Some Lifetime Free options)',
-    link: 'https://t.ly/7sVbz'
-  },
-  {
-    id: 30,
-    name: 'HDFC Biz Black',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Biz+Black',
-    features: ['Premium business rewards', 'unlimited lounge access', 'accelerated rewards on business spends', 'comprehensive insurance coverage'],
-    category: 'Business/Premium',
-    bank: 'HDFC Bank',
-    annualFee: '₹2,500 + GST (Waived on ₹3 lakh annual spend)',
-    link: 'https://t.ly/DR-oT'
-  },
-  {
-    id: 31,
-    name: 'HDFC Biz Grow',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Biz+Grow',
-    features: ['Business-centric rewards', 'lounge access', 'high rewards on business spends', 'GST benefits'],
-    category: 'Business',
-    bank: 'HDFC Bank',
-    annualFee: '₹2,500 + GST (Waived on ₹2 lakh annual spend)',
-    link: 'https://t.ly/DCfcr'
-  },
-  {
-    id: 32,
-    name: 'Indigo Rewards XL HDFC Bank credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Indigo+Rewards+XL+HDFC+Bank+credit+card',
-    features: ['High rewards on IndiGo flight bookings', 'free tickets', 'priority check-in', 'fuel surcharge waiver'],
-    category: 'Travel/Airlines',
-    bank: 'HDFC Bank',
-    annualFee: '₹2,500 + GST',
-    link: 'https://t.ly/j_7RB'
-  },
-  {
-    id: 33,
-    name: 'Diners Privilege HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Diners+Privilege+HDFC+Bank+Credit+card',
-    features: ['10x rewards on select categories', 'domestic & international lounge access', 'dining & travel benefits'],
-    category: 'Premium/Lifestyle',
-    bank: 'HDFC Bank',
-    annualFee: '₹2,500 + GST (Waived on ₹3 lakh annual spend)',
-    link: 'https://t.ly/0QqgX'
-  },
-  {
-    id: 34,
-    name: 'HDFC Millenia',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Millenia',
-    features: ['5% cashback on Amazon & Flipkart', 'high rewards on online shopping', 'lounge access', 'welcome benefits'],
-    category: 'Shopping/Online',
-    bank: 'HDFC Bank',
-    annualFee: '₹1,000 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/3j4--'
-  },
-  {
-    id: 35,
-    name: 'Moneyback Plus HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Moneyback+Plus+HDFC+Bank+Credit+card',
-    features: ['High cashback on online spends', 'milestone rewards', 'fuel surcharge waiver', 'redemption options for cashback'],
-    category: 'Cashback',
-    bank: 'HDFC Bank',
-    annualFee: '₹500 + GST (Waived on ₹50,000 annual spend)',
-    link: 'https://t.ly/SfaBB'
-  },
-  {
-    id: 36,
-    name: 'HDFC Biz First',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Biz+First',
-    features: ['3% CashPoints on EMI spends (max 1,000/month)', '2% on utility bills, electronics', 'SmartPay & Payzapp (max 500/month)', '1% on all other spends including UPI (max 500/month)'],
-    category: 'Business',
-    bank: 'HDFC Bank',
-    annualFee: '₹500 + GST (Waived on ₹50,000 annual spend)',
-    link: 'https://t.ly/-5CoC'
-  },
-  {
-    id: 37,
-    name: 'Shoppers Stop Regular HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Shoppers+Stop+Regular+HDFC+Bank+Credit+card',
-    features: ['3% Reward points on Shoppers Stop spends', 'monthly cap ₹500', '1% Reward points on non-Shoppers Stop spends', 'Complimentary Shoppers Stop Silver Edge membership worth ₹350'],
-    category: 'Shopping',
-    bank: 'HDFC Bank',
-    annualFee: '₹299 + GST',
-    link: 'https://t.ly/KHLdz'
-  },
-  {
-    id: 38,
-    name: 'Tata Neu Infinity HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Tata+Neu+Infinity+HDFC+Bank+Credit+card',
-    features: ['5% back as NeuCoins on Tata Neu', '1.5% back as NeuCoins on Non-Tata Brand spends', '1.5% back as NeuCoins on UPI spends (max 500 NeuCoins per month)'],
-    category: 'Lifestyle/Rewards',
-    bank: 'HDFC Bank',
-    annualFee: '₹1,499 + GST (Waived on ₹3 lakh annual spend)',
-    link: 'https://t.ly/F9I73'
-  },
-  {
-    id: 39,
-    name: 'HDFC Pixel Play',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Pixel+Play',
-    features: ['Customizable rewards on categories like dining, travel, shopping', '1% fuel surcharge waiver', 'Contactless payments'],
-    category: 'Customizable Rewards',
-    bank: 'HDFC Bank',
-    annualFee: '₹500 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/YTMT_'
-  },
-  {
-    id: 40,
-    name: 'Business Moneyback Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Business+Moneyback+Credit+card',
-    features: ['5% cashback on business spends like telecom, electricity, tax payments', 'Up to 50 days interest-free credit period'],
-    category: 'Business/Cashback',
-    bank: 'HDFC Bank',
-    annualFee: '₹500 + GST (Waived on ₹50,000 annual spend)',
-    link: 'https://t.ly/D1t7D'
-  },
-  {
-    id: 41,
-    name: 'HDFC Marriott',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Marriott',
-    features: ['1 Free Night Award and 10 Elite Night Credits on first spend', 'Complimentary Marriott Bonvoy Silver Elite Status', 'Special hotel benefits'],
-    category: 'Travel/Hotel',
-    bank: 'HDFC Bank',
-    annualFee: '₹3,000 + GST',
-    link: 'https://t.ly/jVgnR'
-  },
+    {
+        id: 1,
+        name: 'RBL Indian Oil Xtra',
+        imageUrl: 'https://drws17a9qx558.cloudfront.net/value-calculator/indianoil-rbl-bank-xtra-credit-card/img/build/rblCard.png',
+        features: ['15 Fuel Points per ₹100 at IndianOil stations', '3,000 Fuel Points welcome benefit', 'quarterly milestone rewards'],
+        category: 'Fuel',
+        bank: 'RBL Bank',
+        annualFee: '₹1,500 + GST (Waived on ₹2.75 lakh annual spend)',
+        link: 'https://t.ly/UO4jb'
+      },
+      {
+        id: 2,
+        name: 'RBL Indian oil',
+        imageUrl: 'https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/09/IndianOil-RBL-Bank-Credit-Card.webp',
+        features: ['10 Fuel Points per ₹100 at IOCL', '1 Fuel Point per ₹100 elsewhere', '1,000 points welcome bonus'],
+        category: 'Fuel',
+        bank: 'RBL Bank',
+        annualFee: '₹500 + GST (Waived on ₹1.75 lakh annual spend)',
+        link: 'https://t.ly/CY7bO'
+      },
+      {
+        id: 3,
+        name: 'KIWI',
+        imageUrl: 'https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/07/Klick-RuPay-Credit-Card.webp',
+        features: ['Lifetime free', '2% cashback on UPI transactions', 'complimentary lounge access'],
+        category: 'UPI / Cashback',
+        bank: 'Yes Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/NrtQa'
+      },
+      {
+        id: 4,
+        name: 'Federal Scapia',
+        imageUrl: 'https://www.paisabazaar.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2017/10/Scapia-Federal-Card-image.png.webp',
+        features: ['Lifetime free', '10-20% Scapia Coins rewards', 'unlimited lounge access', 'zero forex markup'],
+        category: 'Travel / Rewards',
+        bank: 'Federal Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/V8Hfp'
+      },
+      {
+        id: 5,
+        name: 'Yes Bank POP Club',
+        imageUrl: 'https://static.bankbazaar.com/images/india/yes-bank-pop-club-credit-card.webp',
+        features: ['Zero joining fee', '10 POPcoins per ₹100 online', 'UPI-enabled', 'welcome benefits'],
+        category: 'Lifestyle / UPI',
+        bank: 'Yes Bank',
+        annualFee: '₹399 (Waived on ₹1.5 lakh annual spend)',
+        link: 'https://t.ly/pYlgR'
+      },
+      {
+        id: 6,
+        name: 'IDFC HPCL First Power',
+        imageUrl: 'https://static.cardekho.com/images/card/IDFC-First-Power-HPCL-Credit-Card.png',
+        features: [
+          '5% savings on fuel at HPCL',
+          'Reward points on all spends',
+          '1% fuel surcharge waiver'
+        ],
+        category: 'Fuel',
+        bank: 'IDFC FIRST Bank',
+        annualFee: '₹199 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/qlZnx'
+      },
+      {
+        id: 7,
+        name: 'IndianOil Axis Bank Credit Card',
+        imageUrl: 'https://cdn.zeebiz.com/sites/default/files/2023/01/12/220594-indian-oil-axis-bank-credit-card.jpg',
+        features: [
+          '4% value back as reward points on fuel at IndianOil',
+          '1% surcharge waiver',
+          'Rewards on online shopping'
+        ],
+        category: 'Fuel',
+        bank: 'Axis Bank',
+        annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/HE5pO'
+      },
+      {
+        id: 8,
+        name: 'BPCL SBI Card',
+        imageUrl: 'https://cdn.dribbble.com/users/1038865/screenshots/10661384/sbi_bpcl.png',
+        features: [
+          '4.25% value back on BPCL fuel',
+          'Reward points on groceries & movies',
+          'Annual fee reversal on ₹50,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'SBI',
+        annualFee: '₹499 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/1hF1y'
+      },
+      {
+        id: 9,
+        name: 'HDFC IndianOil Credit Card',
+        imageUrl: 'https://v.hdfcbank.com/assets/images/credit-cards/hdfc-indian-oil-card.png',
+        features: [
+          '5% savings on fuel at IndianOil outlets',
+          '2.5% cashback on groceries and bill payments',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'HDFC Bank',
+        annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/BiLPQ'
+      },
+      {
+        id: 10,
+        name: 'HPCL Bank of Baroda ENERGIE',
+        imageUrl: 'https://www.bobfinancial.com/images/energie-credit-card.png',
+        features: [
+          'Fuel points on every fuel purchase at HPCL',
+          'Welcome bonus of 2,000 reward points',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'Bank of Baroda',
+        annualFee: '₹499 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/JVuCu'
+      } ,  
+      {
+        id: 11,
+        name: 'ICICI HPCL Coral',
+        imageUrl: 'https://cdn.bankbazaar.com/images/india/hpcl-coral-credit-card.png',
+        features: [
+          '2.5% cashback at HPCL fuel stations',
+          '2 PAYBACK points on every ₹100 spent',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'ICICI Bank',
+        annualFee: '₹199 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/WZ0YW'
+      },
+      {
+        id: 12,
+        name: 'IndianOil HDFC Bank Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/indianoil-hdfc-card.png',
+        features: [
+          '5% savings on fuel at IndianOil outlets',
+          '2.5% cashback on groceries and bill payments',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'HDFC Bank',
+        annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/ZmTq3'
+      },
+      {
+        id: 13,
+        name: 'HPCL IDFC FIRST Power+',
+        imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/power-plus-credit-card/power-plus-credit-card-HPCL.png',
+        features: [
+          '5% savings on HPCL fuel',
+          'Welcome voucher on first spend',
+          'Annual fee waiver on ₹1,00,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'IDFC FIRST Bank',
+        annualFee: '₹499 (Waived on ₹1,00,000 annual spend)',
+        link: 'https://t.ly/nSoab'
+      },
+      {
+        id: 14,
+        name: 'Standard Chartered Super Value Titanium',
+        imageUrl: 'https://www.sc.com/in/assets/images/cards/supervalue_titanium_card.png',
+        features: [
+          '5% cashback on fuel spends',
+          '5% cashback on phone bills and utility',
+          'Annual fee waiver on ₹60,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'Standard Chartered',
+        annualFee: '₹750 (Waived on ₹60,000 annual spend)',
+        link: 'https://t.ly/lQ1y8'
+      },
+      {
+        id: 15,
+        name: 'Axis Bank Freecharge Plus',
+        imageUrl: 'https://cdn.bankbazaar.com/images/india/freecharge-plus-credit-card.png',
+        features: [
+          '5% cashback on Freecharge spends',
+          '2% cashback on all other spends',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'UPI / Cashback',
+        bank: 'Axis Bank',
+        annualFee: '₹350 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/yPxeX'
+      },
+      {
+        id: 16,
+        name: 'SBI SimplyCLICK Credit Card',
+        imageUrl: 'https://images.sbilife.co.in/SimplyClick-Credit-Card.png',
+        features: [
+          '1.25% rewards on online spends',
+          '10x rewards with exclusive partners',
+          'Annual fee waiver on ₹1 lakh spend'
+        ],
+        category: 'Shopping / Cashback',
+        bank: 'SBI',
+        annualFee: '₹499 (Waived on ₹1 lakh annual spend)',
+        link: 'https://t.ly/JVrbu'
+      },
+      {
+        id: 17,
+        name: 'Amazon Pay ICICI Credit Card',
+        imageUrl: 'https://static.amazon.in/images/G/01/amazonpay/cards/cc_hero_01.png',
+        features: [
+          '5% cashback for Prime members on Amazon',
+          '2% on partner merchants',
+          '1% on all other payments'
+        ],
+        category: 'Shopping / Cashback',
+        bank: 'ICICI Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/6YlbD'
+      },
+      {
+        id: 18,
+        name: 'Flipkart Axis Bank Credit Card',
+        imageUrl: 'https://cdn.flipkart.com/fk-p-flap/1680/1680/image/credit_card_axis_1.png',
+        features: [
+          '5% cashback on Flipkart & Myntra',
+          '4% on partner merchants',
+          '1.5% on all other spends'
+        ],
+        category: 'Shopping / Cashback',
+        bank: 'Axis Bank',
+        annualFee: '₹500 (Waived on ₹2 lakh annual spend)',
+        link: 'https://t.ly/2bNsh'
+      },
+      {
+        id: 19,
+        name: 'HDFC Millennia Credit Card',
+        imageUrl: 'https://v.hdfcbank.com/assets/images/credit-cards/hdfc-millennia-credit-card.png',
+        features: [
+          '5% cashback on Amazon, BookMyShow, Flipkart, Myntra, Uber, Swiggy & Zomato',
+          '1% cashback on all other spends',
+          'Annual fee waiver on ₹1 lakh spend'
+        ],
+        category: 'Shopping / Cashback',
+        bank: 'HDFC Bank',
+        annualFee: '₹1,000 (Waived on ₹1 lakh annual spend)',
+        link: 'https://t.ly/HoHZw'
+      },
+      {
+        id: 20,
+        name: 'Axis MyZone Credit Card',
+        imageUrl: 'https://www.axisbank.com/images/default-source/progress-with-us/myzone-credit-card.jpg',
+        features: [
+          '40% off on Swiggy',
+          'BOGO on Paytm Movies',
+          'Annual fee waiver on ₹35,000 spend'
+        ],
+        category: 'Lifestyle / Cashback',
+        bank: 'Axis Bank',
+        annualFee: '₹500 (Waived on ₹35,000 annual spend)',
+        link: 'https://t.ly/E0w7I'
+      },
+      {
+        id: 21,
+        name: 'ICICI Coral Credit Card',
+        imageUrl: 'https://cdn.bankbazaar.com/images/india/icici-coral-credit-card.png',
+        features: [
+          'Dining and movie benefits',
+          'Complimentary railway lounge access',
+          'Annual fee waiver on ₹1.5 lakh spend'
+        ],
+        category: 'Lifestyle / Rewards',
+        bank: 'ICICI Bank',
+        annualFee: '₹500 (Waived on ₹1.5 lakh annual spend)',
+        link: 'https://t.ly/r2FG5'
+      },
+      {
+        id: 22,
+        name: 'IDFC FIRST WOW Credit Card',
+        imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/wow-credit-card/wow-credit-card.png',
+        features: [
+          'Secured credit card against FD',
+          'Lifetime free',
+          'Interest-free cash withdrawal up to 48 days'
+        ],
+        category: 'Secured',
+        bank: 'IDFC FIRST Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/yfEd6'
+      },
+      {
+        id: 23,
+        name: 'HDFC MoneyBack+ Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/moneybackplus-card.png',
+        features: [
+          '2X rewards on online spends',
+          '5X on EMI spends at select merchants',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'Cashback',
+        bank: 'HDFC Bank',
+        annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/oCGEk'
+      },
+      {
+        id: 24,
+        name: 'AU Bank LIT Credit Card',
+        imageUrl: 'https://www.aubank.in/images/cards/LIT-credit-card.png',
+        features: [
+          'Customizable benefits every month',
+          'Cashback on online and offline spends',
+          'Lounge access and OTT benefits'
+        ],
+        category: 'Lifestyle / Customizable',
+        bank: 'AU Small Finance Bank',
+        annualFee: '₹499 (Waived on ₹2 lakh annual spend)',
+        link: 'https://t.ly/WNkNQ'
+      },
+      {
+        id: 25,
+        name: 'SBI SimplySAVE Credit Card',
+        imageUrl: 'https://cdn.sbicard.com/sbi/simplysave-credit-card.png',
+        features: [
+          '10X rewards on dining, movies, grocery & department stores',
+          'Annual fee waiver on ₹1 lakh spend',
+          'Welcome bonus of 2,000 points'
+        ],
+        category: 'Rewards',
+        bank: 'SBI',
+        annualFee: '₹499 (Waived on ₹1 lakh annual spend)',
+        link: 'https://t.ly/L2tfx'
+      },
+      {
+        id: 26,
+        name: 'ICICI Platinum Chip Credit Card',
+        imageUrl: 'https://www.icicibank.com/assets/images/personal/credit-cards/platinum-chip-card.png',
+        features: [
+          'Lifetime free',
+          'Reward points on every ₹100 spent',
+          'Fuel surcharge waiver'
+        ],
+        category: 'Entry-level',
+        bank: 'ICICI Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/j0rQq'
+      },
+      {
+        id: 27,
+        name: 'Tata Neu Plus HDFC Bank Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/tata-neu-plus-credit-card.png',
+        features: [
+          '5% NeuCoins on Tata Neu & partners',
+          '2% on other spends',
+          'Annual fee waiver on ₹1.5 lakh spend'
+        ],
+        category: 'Shopping / Rewards',
+        bank: 'HDFC Bank',
+        annualFee: '₹499 (Waived on ₹1.5 lakh annual spend)',
+        link: 'https://t.ly/NPZgH'
+      },
+      {
+        id: 28,
+        name: 'HDFC Freedom Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/hdfc-freedom-credit-card.png',
+        features: [
+          '5% cashback on PayZapp and SmartBUY',
+          '1 reward point per ₹150 spent',
+          'Annual fee waiver on ₹50,000 spend'
+        ],
+        category: 'Cashback',
+        bank: 'HDFC Bank',
+        annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/LS9SZ'
+      },
+      {
+        id: 29,
+        name: 'IDFC FIRST Millennia Credit Card',
+        imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/millennia-credit-card/millennia-credit-card.png',
+        features: [
+          '3X rewards on all online spends',
+          'Birthday rewards',
+          'Lifetime free'
+        ],
+        category: 'Rewards / Cashback',
+        bank: 'IDFC FIRST Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/WCP2V'
+      },
+      {
+        id: 30,
+        name: 'Kotak 811 #DreamDifferent Credit Card',
+        imageUrl: 'https://www.kotak.com/content/dam/Kotak/credit-cards/kotak-811-dream-different-credit-card.png',
+        features: [
+          'Secured card against FD',
+          'Lifetime free',
+          'No income proof required'
+        ],
+        category: 'Secured',
+        bank: 'Kotak Mahindra Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/tZbUa'
+      },      
+      {
+        id: 31,
+        name: 'OneCard Credit Card',
+        imageUrl: 'https://cdn.onecard.in/card/onecard.png',
+        features: [
+          '5X rewards on top 2 spend categories',
+          'Lifetime free',
+          'Metal card design',
+          'Zero joining and annual fees'
+        ],
+        category: 'Rewards / Entry-level',
+        bank: 'OneCard (various partner banks)',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/Zq2xN'
+      },
+      {
+        id: 32,
+        name: 'IDFC FIRST Select Credit Card',
+        imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/select-credit-card/select-credit-card.png',
+        features: [
+          'Reward points on all spends',
+          'Low interest rates',
+          'Complimentary railway lounge access',
+          'Lifetime free'
+        ],
+        category: 'Rewards',
+        bank: 'IDFC FIRST Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/yqJOG'
+      },
+      {
+        id: 33,
+        name: 'SBI BPCL Credit Card',
+        imageUrl: 'https://cdn.bankbazaar.com/images/india/sbi-bpcl-credit-card.png',
+        features: [
+          '4.25% value back at BPCL fuel stations',
+          'Reward points on groceries and movies',
+          'Annual fee reversal on ₹50,000 spend'
+        ],
+        category: 'Fuel',
+        bank: 'SBI',
+        annualFee: '₹499 (Waived on ₹50,000 annual spend)',
+        link: 'https://t.ly/UkzA9'
+      },
+      {
+        id: 34,
+        name: 'AU Bank Vetta Credit Card',
+        imageUrl: 'https://www.aubank.in/images/cards/vetta-credit-card.png',
+        features: [
+          'Lounge access',
+          'Reward points on every spend',
+          'Lifestyle privileges',
+          'Annual fee waiver on ₹1.5 lakh spend'
+        ],
+        category: 'Rewards / Lifestyle',
+        bank: 'AU Small Finance Bank',
+        annualFee: '₹2,999 (Waived on ₹1.5 lakh annual spend)',
+        link: 'https://t.ly/CZ9qA'
+      },
+      {
+        id: 35,
+        name: 'HDFC Diners Club Black Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/diners-club-black-credit-card.png',
+        features: [
+          'Unlimited lounge access worldwide',
+          'Premium hotel and dining privileges',
+          'Concierge service',
+          'Milestone benefits'
+        ],
+        category: 'Super Premium',
+        bank: 'HDFC Bank',
+        annualFee: '₹10,000 (Waived on ₹8 lakh annual spend)',
+        link: 'https://t.ly/0DCQe'
+      },
+      {
+        id: 36,
+        name: 'HDFC Millennia Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/hdfc-millennia-credit-card.png',
+        features: [
+          '5% cashback on Amazon, Flipkart, BookMyShow, Myntra, Swiggy, Uber, Zomato',
+          '1% cashback on other spends',
+          'Annual fee waiver on ₹1 lakh spend'
+        ],
+        category: 'Shopping / Cashback',
+        bank: 'HDFC Bank',
+        annualFee: '₹1,000 (Waived on ₹1 lakh annual spend)',
+        link: 'https://t.ly/HoHZw'
+      },
+      {
+        id: 37,
+        name: 'Axis Bank ACE Credit Card',
+        imageUrl: 'https://www.axisbank.com/images/default-source/progress-with-us/ace-credit-card.jpg',
+        features: [
+          '5% cashback on bill payments & recharges via Google Pay',
+          '4% cashback on Swiggy, Zomato, Ola',
+          '2% cashback on all other spends'
+        ],
+        category: 'Cashback',
+        bank: 'Axis Bank',
+        annualFee: '₹499 (Waived on ₹2 lakh annual spend)',
+        link: 'https://t.ly/dIQT1'
+      },
+      {
+        id: 38,
+        name: 'Tata Neu Infinity HDFC Bank Credit Card',
+        imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/tata-neu-infinity-credit-card.png',
+        features: [
+          '10% NeuCoins on Tata Neu & partners',
+          '5% on other spends',
+          'Annual fee waiver on ₹3 lakh spend'
+        ],
+        category: 'Shopping / Rewards',
+        bank: 'HDFC Bank',
+        annualFee: '₹1,499 (Waived on ₹3 lakh annual spend)',
+        link: 'https://t.ly/q5HPK'
+      },
+      {
+        id: 39,
+        name: 'IDFC FIRST Wealth Credit Card',
+        imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/wealth-credit-card/wealth-credit-card.png',
+        features: [
+          'Complimentary airport lounge & spa access',
+          'Low interest rates',
+          'Premium rewards',
+          'Lifetime free'
+        ],
+        category: 'Premium / Rewards',
+        bank: 'IDFC FIRST Bank',
+        annualFee: 'Lifetime Free',
+        link: 'https://t.ly/Mr7Lp'
+      },
+      {
+        id: 40,
+        name: 'SBI SimplyCLICK Advantage Credit Card',
+        imageUrl: 'https://www.sbicard.com/simplyclick-advantage.png',
+        features: [
+          '1.25% rewards on all online spends',
+          'Annual fee waiver on ₹'
+        ],
+      },      
   {
     id: 42,
-    name: 'IRCTC',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IRCTC',
-    features: ['Use your IRCTC SBI Platinum Card to book railway tickets online', 'Doorstep delivery', 'Accepted at Visa payment gateways'],
-    category: 'Travel/Railways',
-    bank: 'SBI',
-    annualFee: '₹500 + GST',
-    link: 'https://t.ly/JZi1C'
+    name: 'HDFC Regalia Credit Card',
+    imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/regalia-card.png',
+    features: [
+      'Complimentary airport lounge access',
+      '4 reward points per ₹150 spent',
+      'Comprehensive travel insurance',
+      'Dining privileges'
+    ],
+    category: 'Travel / Premium',
+    bank: 'HDFC Bank',
+    annualFee: '₹2,500 (Waived on ₹3 lakh annual spend)',
+    link: 'https://t.ly/ASyTo'
   },
   {
     id: 43,
-    name: 'Swiggy',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Swiggy',
-    features: ['Complimentary Swiggy One Membership for 3 months as welcome benefit', '10% cashback on Swiggy App', 'Save up to 6.8% annually'],
-    category: 'Food Delivery',
-    bank: 'HDFC Bank',
-    annualFee: '₹500 + GST (Waived on ₹2 lakh annual spend)',
-    link: 'https://t.ly/oZ2qe'
+    name: 'SBI Card PRIME',
+    imageUrl: 'https://www.sbicard.com/sbi-card-prime.png',
+    features: [
+      'Welcome gift vouchers worth ₹3,000',
+      'Complimentary Club Vistara & Trident Privilege memberships',
+      'Lounge access',
+      'Milestone benefits'
+    ],
+    category: 'Premium',
+    bank: 'SBI',
+    annualFee: '₹2,999 (Waived on ₹3 lakh annual spend)',
+    link: 'https://t.ly/Q8CSm'
   },
   {
     id: 44,
-    name: 'Millenia HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Millenia+HDFC+Bank+Credit+card',
-    features: ['5% cashback on Amazon & Flipkart', 'High rewards on online shopping', 'Lounge access', 'Welcome benefits'],
-    category: 'Shopping/Online',
+    name: 'HDFC Bank Diners Club Privilege',
+    imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/diners-club-privilege-credit-card.png',
+    features: [
+      'Complimentary lounge access worldwide',
+      'Premium rewards',
+      'Travel and dining privileges'
+    ],
+    category: 'Travel / Premium',
     bank: 'HDFC Bank',
-    annualFee: '₹1,000 + GST (Waived on ₹1 lakh annual spend)',
-    link: 'https://t.ly/ZBTw9'
+    annualFee: '₹2,500 (Waived on ₹3 lakh annual spend)',
+    link: 'https://t.ly/2lqvT'
   },
   {
     id: 45,
-    name: 'HDFC Bank Bharat Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Bank+Bharat+Credit+card',
-    features: ['Save annually up to ₹3,600', '5% cashback on IRCTC, fuel, groceries, bill payment/recharge', 'Additional benefits on Payzapp and EasyEMI'],
-    category: 'Cashback',
-    bank: 'HDFC Bank',
-    annualFee: '₹500 + GST (Waived on ₹50,000 annual spend)',
-    link: 'https://t.ly/TjoBA'
+    name: 'ICICI Sapphiro Credit Card',
+    imageUrl: 'https://cdn.bankbazaar.com/images/india/icici-sapphiro-credit-card.png',
+    features: [
+      'Welcome benefits worth ₹9,000',
+      'Domestic and international lounge access',
+      'Golf privileges',
+      'Reward points on all spends'
+    ],
+    category: 'Premium',
+    bank: 'ICICI Bank',
+    annualFee: '₹6,500 (Waived on ₹6 lakh annual spend)',
+    link: 'https://t.ly/iG2tr'
   },
   {
     id: 46,
-    name: 'IndianOil HDFC Bank Credit Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IndianOil+HDFC+Bank+Credit+Card',
-    features: ['5% cashback on fuel at IndianOil', '1% fuel surcharge waiver', 'reward points on other spends'],
-    category: 'Fuel/Rewards',
-    bank: 'HDFC Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/3Y2Ql'
+    name: 'YES BANK First Preferred Credit Card',
+    imageUrl: 'https://www.yesbank.in/content/dam/yes-bank/cards/credit-cards/first-preferred-credit-card.png',
+    features: [
+      'Accelerated rewards on travel, dining, shopping',
+      'Complimentary golf lessons',
+      'Annual fee waiver on ₹2.5 lakh spend'
+    ],
+    category: 'Rewards / Travel',
+    bank: 'YES BANK',
+    annualFee: '₹999 (Waived on ₹2.5 lakh annual spend)',
+    link: 'https://t.ly/7bNEl'
   },
   {
     id: 47,
-    name: 'Indigo Rewards HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Indigo+Rewards+HDFC+Bank+Credit+card',
-    features: ['2.5% rewards on Indigo bookings', '1.5% on dining, shopping', 'lounge access'],
-    category: 'Travel/Rewards',
-    bank: 'HDFC Bank',
-    annualFee: '₹500-₹1,000',
-    link: 'https://t.ly/cHcf_'
+    name: 'AU Bank Zenith+ Credit Card',
+    imageUrl: 'https://www.aubank.in/images/cards/zenith-plus-credit-card.png',
+    features: [
+      'Airport lounge access',
+      'Luxury lifestyle benefits',
+      'Reward points on all spends'
+    ],
+    category: 'Premium / Lifestyle',
+    bank: 'AU Small Finance Bank',
+    annualFee: '₹7,999 (Waived on ₹8 lakh annual spend)',
+    link: 'https://t.ly/8FpAn'
   },
   {
     id: 48,
-    name: 'Tata Neu Plus HDFC Bank Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Tata+Neu+Plus+HDFC+Bank+Credit+card',
-    features: ['2% NeuCoins on Tata brands', '1% on others', 'complimentary lounge visits'],
-    category: 'Shopping/Rewards',
-    bank: 'HDFC Bank',
-    annualFee: '₹499',
-    link: 'https://t.ly/_V2hD'
+    name: 'Axis Bank Magnus Credit Card',
+    imageUrl: 'https://www.axisbank.com/images/default-source/progress-with-us/magnus-credit-card.jpg',
+    features: [
+      'Unlimited domestic airport lounge access',
+      'Complimentary international lounge access',
+      'Dining and golf privileges',
+      'Milestone rewards'
+    ],
+    category: 'Super Premium',
+    bank: 'Axis Bank',
+    annualFee: '₹12,500 (Waived on ₹25 lakh annual spend)',
+    link: 'https://t.ly/H3nMe'
   },
   {
     id: 49,
-    name: 'HDFC Bank Freedom Credit card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=HDFC+Bank+Freedom+Credit+card',
-    features: ['5x rewards on groceries', 'bill payments', 'dining', 'milestone gift vouchers'],
-    category: 'Rewards/Lifestyle',
+    name: 'HDFC Infinia Credit Card',
+    imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/infinia-credit-card.png',
+    features: [
+      'Unlimited lounge access worldwide',
+      '5 reward points per ₹150 spent',
+      'Concierge and golf privileges'
+    ],
+    category: 'Super Premium',
     bank: 'HDFC Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/YEN3w'
+    annualFee: '₹12,500 (Waived on ₹10 lakh annual spend)',
+    link: 'https://t.ly/YCD0Q'
   },
   {
     id: 50,
-    name: 'IDFC Mayura',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+Mayura',
-    features: ['Lifetime free', 'rewards on all spends', 'up to 3x rewards', 'no joining/annual fees'],
-    category: 'Rewards/Lifestyle',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/VbU3O'
-  },
+    name: 'SBI Card ELITE',
+    imageUrl: 'https://www.sbicard.com/sbi-card-elite.png',
+    features: [
+      'Welcome e-gift voucher worth ₹5,000',
+      'Complimentary lounge access',
+      'Milestone benefits',
+      'Dining privileges'
+    ],
+    category: 'Premium',
+    bank: 'SBI',
+    annualFee: '₹4,999 (Waived on ₹10 lakh annual spend)',
+    link: 'https://t.ly/bQNsz'
+  },  
   {
     id: 51,
-    name: 'IDFC SWYP',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+SWYP',
-    features: ['Digital-first', 'instant issuance', 'rewards on online spends', 'no annual fee'],
-    category: 'Digital/Rewards',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/K1qBA'
+    name: 'IDFC FIRST Classic Credit Card',
+    imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/classic-credit-card/classic-credit-card.png',
+    features: [
+      'Reward points on all spends',
+      'Low interest rates',
+      'Lifetime free'
+    ],
+    category: 'Entry-level / Rewards',
+    bank: 'IDFC FIRST Bank',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/JyVIT'
   },
   {
     id: 52,
-    name: 'IDFC Power Plus',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+Power+Plus',
-    features: ['High rewards on utilities', 'insurance', 'and fuel', 'unlimited reward validity'],
-    category: 'Utility/Rewards',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/nvd-q'
+    name: 'Axis Bank Privilege Credit Card',
+    imageUrl: 'https://www.axisbank.com/images/default-source/progress-with-us/privilege-credit-card.jpg',
+    features: [
+      'Welcome gift worth ₹5,000',
+      'Complimentary airport lounge access',
+      'Annual fee waiver on ₹2.5 lakh spend'
+    ],
+    category: 'Travel / Rewards',
+    bank: 'Axis Bank',
+    annualFee: '₹1,500 (Waived on ₹2.5 lakh annual spend)',
+    link: 'https://t.ly/VguQO'
   },
   {
     id: 53,
-    name: 'IDFC Ashwa',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+Ashwa',
-    features: ['Exclusive for defence personnel', 'rewards on all spends', 'insurance benefits', 'no annual fee'],
-    category: 'Defence/Rewards',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/3fcMX'
+    name: 'SBI Card Unnati',
+    imageUrl: 'https://www.sbicard.com/sbi-card-unnati.png',
+    features: [
+      'No annual fee for first 4 years',
+      'Reward points on every spend',
+      'Easy approval with minimum documents'
+    ],
+    category: 'Entry-level / Rewards',
+    bank: 'SBI',
+    annualFee: 'Free for first 4 years',
+    link: 'https://t.ly/Xp7yB'
   },
   {
     id: 54,
-    name: 'Axis Airtel Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Airtel+Card',
-    features: ['25% cashback on Airtel spends', '10% on utility bill payments', 'lounge access'],
-    category: 'Bill Payments/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/xsjjS'
+    name: 'ICICI Amazon Pay Credit Card',
+    imageUrl: 'https://static.amazon.in/images/G/01/amazonpay/cards/cc_hero_01.png',
+    features: [
+      '5% cashback for Prime members on Amazon',
+      '2% cashback at Amazon partners',
+      '1% cashback on all other spends',
+      'Lifetime free'
+    ],
+    category: 'Shopping / Cashback',
+    bank: 'ICICI Bank',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/6YlbD'
   },
   {
     id: 55,
-    name: 'IDFC FIRST WOW Secured cards',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+FIRST+WOW+Secured+cards',
-    features: ['Secured credit card (against FD)', 'rewards on all spends', 'no annual fee'],
-    category: 'Secured/Rewards',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/1AR8k'
+    name: 'IndusInd Bank Platinum Aura Edge',
+    imageUrl: 'https://www.indusind.com/content/dam/indusind-bank/cards/credit-cards/aura-edge-credit-card.png',
+    features: [
+      'Reward points on every spend',
+      'Choice of multiple plans',
+      'Annual fee waiver on ₹2 lakh spend'
+    ],
+    category: 'Rewards',
+    bank: 'IndusInd Bank',
+    annualFee: '₹500 (Waived on ₹2 lakh annual spend)',
+    link: 'https://t.ly/y7jKu'
   },
   {
     id: 56,
-    name: 'IDFC Power',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+Power',
-    features: ['High rewards on utility', 'insurance', 'and fuel payments', 'no annual fee', 'unlimited rewards validity'],
-    category: 'Utility/Rewards',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/L7LEB'
+    name: 'HSBC Cashback Credit Card',
+    imageUrl: 'https://www.hsbc.co.in/content/dam/hsbc/in/images/credit-cards/hsbc-cashback-credit-card.png',
+    features: [
+      '1.5% cashback on online spends',
+      '1% cashback on all other spends',
+      'Annual fee waiver on ₹1 lakh spend'
+    ],
+    category: 'Cashback',
+    bank: 'HSBC',
+    annualFee: '₹750 (Waived on ₹1 lakh annual spend)',
+    link: 'https://t.ly/fbKSe'
   },
   {
     id: 57,
-    name: 'Axis Rewards',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Rewards',
-    features: ['2x-5x EDGE Rewards points on shopping', 'dining', 'and more', 'fuel surcharge waiver'],
-    category: 'Rewards/Lifestyle',
-    bank: 'Axis Bank',
-    annualFee: '₹1,000',
-    link: 'https://t.ly/nWCsx'
+    name: 'BOB Financial Eterna Credit Card',
+    imageUrl: 'https://www.bobfinancial.com/images/eterna-credit-card.png',
+    features: [
+      '15X reward points on online spends',
+      'Complimentary domestic airport lounge access',
+      'Annual fee waiver on ₹2.5 lakh spend'
+    ],
+    category: 'Premium / Rewards',
+    bank: 'Bank of Baroda',
+    annualFee: '₹2,499 (Waived on ₹2.5 lakh annual spend)',
+    link: 'https://t.ly/B0UyT'
   },
   {
     id: 58,
-    name: 'Axis LIC Signature',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+LIC+Signature',
-    features: ['Special rewards on LIC premium payments', 'milestone benefits', 'fuel surcharge waiver'],
-    category: 'Insurance/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹2,000',
-    link: 'https://t.ly/f0gdY'
+    name: 'ICICI Bank Platinum Credit Card',
+    imageUrl: 'https://www.icicibank.com/assets/images/personal/credit-cards/platinum-chip-card.png',
+    features: [
+      'Lifetime free',
+      'Reward points on every spend',
+      'Fuel surcharge waiver'
+    ],
+    category: 'Entry-level / Rewards',
+    bank: 'ICICI Bank',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/j0rQq'
   },
   {
     id: 59,
-    name: 'IDFC FIRST Unsecured Cards',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=IDFC+FIRST+Unsecured+Cards',
-    features: ['Lifetime free', 'rewards on all spends', 'no joining/annual fees'],
-    category: 'Rewards/Lifestyle',
-    bank: 'IDFC FIRST',
-    annualFee: '₹0 (Lifetime Free)',
-    link: 'https://t.ly/9R7ap'
+    name: 'YES Prosperity Rewards Plus Credit Card',
+    imageUrl: 'https://www.yesbank.in/content/dam/yes-bank/cards/credit-cards/prosperity-rewards-plus-credit-card.png',
+    features: [
+      'Reward points on all spends',
+      'Fuel surcharge waiver',
+      'Annual fee waiver on ₹3.6 lakh spend'
+    ],
+    category: 'Rewards',
+    bank: 'YES BANK',
+    annualFee: '₹399 (Waived on ₹3.6 lakh annual spend)',
+    link: 'https://t.ly/ek8BG'
   },
   {
     id: 60,
-    name: 'Axis LIC Platinum',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+LIC+Platinum',
-    features: ['2x rewards on LIC premiums', 'fuel surcharge waiver', 'shopping benefits'],
-    category: 'Insurance/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/F3W9o'
-  },
+    name: 'SBI IRCTC Platinum Credit Card',
+    imageUrl: 'https://www.sbicard.com/irctc-sbi-card.png',
+    features: [
+      'Up to 10% value back on IRCTC bookings',
+      '1% transaction fee waiver',
+      'Reward points on every spend'
+    ],
+    category: 'Travel / Rewards',
+    bank: 'SBI',
+    annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+    link: 'https://t.ly/8cz8B'
+  },  
   {
     id: 61,
-    name: 'Axis Samsung Infinite',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Samsung+Infinite',
-    features: ['Up to 10% cashback on Samsung purchases', 'airport lounge access', 'milestone benefits'],
-    category: 'Premium/Lifestyle',
-    bank: 'Axis Bank',
-    annualFee: '₹12,999',
-    link: 'https://t.ly/8obbU'
+    name: 'Standard Chartered Manhattan Platinum',
+    imageUrl: 'https://www.sc.com/in/assets/images/cards/manhattan_platinum_card.png',
+    features: [
+      '5% cashback on groceries and supermarkets',
+      'Reward points on all other spends',
+      'Annual fee waiver on ₹1.2 lakh spend'
+    ],
+    category: 'Shopping / Cashback',
+    bank: 'Standard Chartered',
+    annualFee: '₹999 (Waived on ₹1.2 lakh annual spend)',
+    link: 'https://t.ly/3w7JA'
   },
   {
     id: 62,
-    name: 'Axis Samsung Signature',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Samsung+Signature',
-    features: ['Up to 5% cashback on Samsung', 'dining offers', 'airport lounge access'],
-    category: 'Shopping/Lifestyle',
-    bank: 'Axis Bank',
-    annualFee: '₹5,000',
-    link: 'https://t.ly/feBmR'
+    name: 'IDFC FIRST Wealth Credit Card',
+    imageUrl: 'https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/credit-card/wealth-credit-card/wealth-credit-card.png',
+    features: [
+      'Complimentary lounge & spa access',
+      'Premium rewards',
+      'Lifetime free'
+    ],
+    category: 'Premium / Rewards',
+    bank: 'IDFC FIRST Bank',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/Mr7Lp'
   },
   {
     id: 63,
-    name: 'Axis Atlas',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Atlas',
-    features: ['Travel points on all spends', 'airport lounge access (domestic/international)', 'milestone benefits'],
-    category: 'Travel/Premium',
-    bank: 'Axis Bank',
-    annualFee: '₹5,000',
-    link: 'https://t.ly/7Wc0_'
+    name: 'HSBC Platinum Credit Card',
+    imageUrl: 'https://www.hsbc.co.in/content/dam/hsbc/in/images/credit-cards/hsbc-platinum-credit-card.png',
+    features: [
+      'Lifetime free',
+      'Reward points on all spends',
+      'Introductory offers'
+    ],
+    category: 'Entry-level / Rewards',
+    bank: 'HSBC',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/47cEI'
   },
   {
     id: 64,
-    name: 'Axis Neo',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Neo',
-    features: ['Cashback on online spends (Swiggy', 'Zomato', 'BookMyShow)', 'discount offers'],
-    category: 'Entry-Level/Rewards',
+    name: 'Axis Bank NEO Credit Card',
+    imageUrl: 'https://www.axisbank.com/images/default-source/progress-with-us/neo-credit-card.jpg',
+    features: [
+      'Discounts on shopping, movies, and dining',
+      'Welcome benefits',
+      'Annual fee waiver on ₹2.5 lakh spend'
+    ],
+    category: 'Lifestyle / Cashback',
     bank: 'Axis Bank',
-    annualFee: '₹250',
-    link: 'https://t.ly/l_qun'
+    annualFee: '₹250 (Waived on ₹2.5 lakh annual spend)',
+    link: 'https://t.ly/DsYqK'
   },
   {
     id: 65,
-    name: 'Axis Spicejet Voyage Black',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Spicejet+Voyage+Black',
-    features: ['Up to 12 SpiceJet tickets free/year', 'SpiceClub points', 'complimentary lounge access'],
-    category: 'Travel/Airlines',
-    bank: 'Axis Bank',
-    annualFee: '₹2,000',
-    link: 'https://t.ly/P-xyG'
+    name: 'HDFC Regalia First Credit Card',
+    imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/regalia-first-card.png',
+    features: [
+      'Complimentary airport lounge access',
+      'Reward points on all spends',
+      'Annual fee waiver on ₹1 lakh spend'
+    ],
+    category: 'Travel / Rewards',
+    bank: 'HDFC Bank',
+    annualFee: '₹1,000 (Waived on ₹1 lakh annual spend)',
+    link: 'https://t.ly/0RuA6'
   },
   {
     id: 66,
-    name: 'Axis Spicejet Voyage Black',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Spicejet+Voyage+Black',
-    features: ['Free SpiceJet flight tickets', 'SpiceClub points', 'complimentary airport lounge access'],
-    category: 'Travel/Airlines',
-    bank: 'Axis Bank',
-    annualFee: '₹2,000',
-    link: 'https://t.ly/j0Rwr'
+    name: 'Kotak Royale Signature Credit Card',
+    imageUrl: 'https://www.kotak.com/content/dam/Kotak/credit-cards/kotak-royale-signature-credit-card.png',
+    features: [
+      'Accelerated rewards on travel & dining',
+      'Lounge access',
+      'Annual fee waiver on ₹1 lakh spend'
+    ],
+    category: 'Premium / Rewards',
+    bank: 'Kotak Mahindra Bank',
+    annualFee: '₹999 (Waived on ₹1 lakh annual spend)',
+    link: 'https://t.ly/aiCSN'
   },
   {
     id: 67,
-    name: 'Axis Health Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Health+Card',
-    features: ['Discounts on healthcare services', 'wellness benefits', 'unlimited tele-consultations'],
-    category: 'Health/Lifestyle',
-    bank: 'Axis Bank',
-    annualFee: '₹749',
-    link: 'https://t.ly/Mt1CB'
+    name: 'ICICI Platinum Chip Credit Card',
+    imageUrl: 'https://www.icicibank.com/assets/images/personal/credit-cards/platinum-chip-card.png',
+    features: [
+      'Lifetime free',
+      'Reward points on every ₹100 spent',
+      'Fuel surcharge waiver'
+    ],
+    category: 'Entry-level',
+    bank: 'ICICI Bank',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/j0rQq'
   },
   {
     id: 68,
-    name: 'Axis Magnus',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Magnus',
-    features: ['Premium lifestyle benefits', 'unlimited lounge access (domestic/international)', 'airport concierge'],
-    category: 'Premium/Lifestyle',
-    bank: 'Axis Bank',
-    annualFee: '₹12,500',
-    link: 'https://t.ly/rZNLS'
+    name: 'Bank of Baroda Prime Credit Card',
+    imageUrl: 'https://www.bobfinancial.com/images/prime-credit-card.png',
+    features: [
+      'Lifetime free',
+      'Reward points on every spend',
+      'Best for first-time users'
+    ],
+    category: 'Entry-level / Rewards',
+    bank: 'Bank of Baroda',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/vWqub'
   },
   {
     id: 69,
-    name: 'Axis Indian Oil Credit Card (RuPay)',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Indian+Oil+Credit+Card+(RuPay)',
-    features: ['4% value back on IndianOil fuel spends', '1% on online', 'fuel surcharge waiver'],
-    category: 'Fuel/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/RhW0Z'
+    name: 'AU Bank Altura Credit Card',
+    imageUrl: 'https://www.aubank.in/images/cards/altura-credit-card.png',
+    features: [
+      'Cashback on spends',
+      'Milestone rewards',
+      'Annual fee waiver on ₹50,000 spend'
+    ],
+    category: 'Cashback / Entry-level',
+    bank: 'AU Small Finance Bank',
+    annualFee: '₹199 (Waived on ₹50,000 annual spend)',
+    link: 'https://t.ly/9tFHQ'
   },
   {
     id: 70,
-    name: 'Axis Privilege',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Privilege',
-    features: ['2x EDGE Rewards points on all spends', 'free lounge visits', 'milestone benefits'],
-    category: 'Rewards/Lifestyle',
-    bank: 'Axis Bank',
-    annualFee: '₹1,500',
-    link: 'https://t.ly/3JHjt'
+    name: 'RBL Bank Shoprite Credit Card',
+    imageUrl: 'https://www.rblbank.com/images/cards/credit-cards/shoprite-credit-card.png',
+    features: [
+      '5% cashback on groceries',
+      '2,000 reward points as welcome benefit',
+      'Annual fee waiver on ₹1 lakh spend'
+    ],
+    category: 'Shopping / Cashback',
+    bank: 'RBL Bank',
+    annualFee: '₹500 (Waived on ₹1 lakh annual spend)',
+    link: 'https://t.ly/fCyM7'
   },
   {
     id: 71,
-    name: 'Axis Indian Oil Credit Card',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Indian+Oil+Credit+Card',
-    features: ['4% value back on IndianOil fuel', '1% on online spends', '1% fuel surcharge waiver'],
-    category: 'Fuel/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/AK5ED'
+    name: 'HDFC MoneyBack Credit Card',
+    imageUrl: 'https://www.hdfcbank.com/assets/images/credit-cards/moneyback-card.png',
+    features: [
+      '2X rewards on online spends',
+      'Annual fee waiver on ₹50,000 spend',
+      'Redeem points for statement credit'
+    ],
+    category: 'Cashback',
+    bank: 'HDFC Bank',
+    annualFee: '₹500 (Waived on ₹50,000 annual spend)',
+    link: 'https://t.ly/M0OFy'
   },
   {
     id: 72,
-    name: 'Axis Aura',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Aura',
-    features: ['Health and wellness rewards', 'free health checkups', 'fitness memberships'],
-    category: 'Health/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹749',
-    link: 'https://t.ly/DSESi'
+    name: 'YES Prosperity Edge Credit Card',
+    imageUrl: 'https://www.yesbank.in/content/dam/yes-bank/cards/credit-cards/prosperity-edge-credit-card.png',
+    features: [
+      'Accelerated rewards on travel, dining, shopping',
+      'Fuel surcharge waiver',
+      'Annual fee waiver on ₹2.5 lakh spend'
+    ],
+    category: 'Rewards',
+    bank: 'YES BANK',
+    annualFee: '₹399 (Waived on ₹2.5 lakh annual spend)',
+    link: 'https://t.ly/w8t5G'
   },
   {
     id: 73,
-    name: 'Axis Myzone',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Myzone',
-    features: ['Buy 1 Get 1 Free on BookMyShow', 'complimentary lounge access', 'cashback on fashion'],
-    category: 'Lifestyle/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/HYpIO'
+    name: 'HSBC Smart Value Credit Card',
+    imageUrl: 'https://www.hsbc.co.in/content/dam/hsbc/in/images/credit-cards/hsbc-smart-value-credit-card.png',
+    features: [
+      '10% cashback on dining, movies & groceries',
+      '2 reward points per ₹150 spent',
+      'Annual fee waiver on ₹50,000 spend'
+    ],
+    category: 'Cashback / Rewards',
+    bank: 'HSBC',
+    annualFee: '₹499 (Waived on ₹50,000 annual spend)',
+    link: 'https://t.ly/KFltE'
   },
   {
     id: 74,
-    name: 'Axis Select',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Select',
-    features: ['20 EDGE Points/₹200', 'free lounge access', 'dining & travel benefits'],
-    category: 'Premium/Rewards',
-    bank: 'Axis Bank',
-    annualFee: '₹3,000',
-    link: 'https://t.ly/Pptqk'
+    name: 'BOB Financial Prime Credit Card',
+    imageUrl: 'https://www.bobfinancial.com/images/prime-credit-card.png',
+    features: [
+      'Lifetime free',
+      'Reward points on every spend',
+      'Easy approval for new users'
+    ],
+    category: 'Entry-level / Rewards',
+    bank: 'Bank of Baroda',
+    annualFee: 'Lifetime Free',
+    link: 'https://t.ly/vWqub'
   },
   {
     id: 75,
-    name: 'Axis Ace',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Ace',
-    features: ['5% cashback on bill payments via Google Pay', '2% on other spends'],
-    category: 'Cashback',
-    bank: 'Axis Bank',
-    annualFee: '₹499',
-    link: 'https://t.ly/zFiFb'
+    name: 'IndusInd Bank Platinum Aura Credit Card',
+    imageUrl: 'https://www.indusind.com/content/dam/indusind-bank/cards/credit-cards/aura-credit-card.png',
+    features: [
+      'Multiple reward plan options',
+      'Annual fee waiver on ₹2 lakh spend',
+      'Value back on all categories'
+    ],
+    category: 'Rewards',
+    bank: 'IndusInd Bank',
+    annualFee: '₹899 (Waived on ₹2 lakh annual spend)',
+    link: 'https://t.ly/LdngL'
   },
   {
     id: 76,
-    name: 'Axis Flipkart',
-    imageUrl: 'https://via.placeholder.com/300x180.png?text=Axis+Flipkart',
-    features: ['5% cashback on Flipkart & Myntra', '4% on preferred merchants', 'lounge access'],
-    category: 'Shopping/Cashback',
-    bank: 'Axis Bank',
-    annualFee: '₹500',
-    link: 'https://t.ly/2g0-n'
-  }
-
+    name: 'ICICI Bank Coral Contactless Credit Card',
+    imageUrl: 'https://www.icicibank.com/assets/images/personal/credit-cards/coral-contactless-card.png',
+    features: [
+      'Dining & movie benefits',
+      'Railway & airport lounge access',
+      'Annual fee waiver on ₹1.5 lakh spend'
+    ],
+    category: 'Lifestyle / Rewards',
+    bank: 'ICICI Bank',
+    annualFee: '₹500 (Waived on ₹1.5 lakh annual spend)',
+    link: 'https://t.ly/r2FG5'
+  },
+  {
+    id: 77,
+    name: 'YES FIRST Exclusive Credit Card',
+    imageUrl: 'https://www.yesbank.in/content/dam/yes-bank/cards/credit-cards/first-exclusive-credit-card.png',
+    features: [
+      'International lounge access',
+      'Best-in-class rewards',
+      'Lifestyle privileges'
+    ],
+    category: 'Super Premium',
+    bank: 'YES BANK',
+    annualFee: '₹10,000 (Waived on ₹20 lakh annual spend)',
+    link: 'https://t.ly/C2PRC'
+  },
 ];
