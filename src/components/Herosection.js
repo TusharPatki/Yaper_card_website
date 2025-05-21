@@ -14,7 +14,7 @@ const HeroSection = () => {
           </div>
           <div className="md:w-3/5 flex justify-end">
             <img 
-              src="/Group_6_1-removebg-preview.png" 
+              src="/credit-card-banner.png" 
               alt="Credit Card" 
               className="rounded-lg shadow-xl w-4/5 md:w-auto md:max-w-lg"
             />

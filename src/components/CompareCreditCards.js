@@ -7,14 +7,25 @@ const CompareCreditCards = ({ showAll = false, filters = { category: 'All', annu
   // Get all bank cards from our data files
   const allCards = getAllCards().map(card => {
     // Mark specific cards as trending
-    const trendingCards = ['SBI Cashback card', 'HDFC Millenia', 'Axis Flipkart', 'Federal Scapia'];
+    const trendingCards = [
+      'RBL Indian Oil Xtra',
+      'KIWI',
+      'Federal Scapia',
+      'Tata Neu HDFC',
+      'Indusind Bajaj Tiger card'
+    ];
     const isTrending = trendingCards.includes(card.name);
+    
+    // Extract just the numeric value from annual fee for filtering
+    const feeStr = card.annualFee || '';
+    const numericFee = parseInt(feeStr.replace(/[^0-9]/g, '') || '0', 10);
     
     return {
       id: card.id,
       name: card.name,
       annualFee: card.annualFee,
-      annualFeeValue: parseInt(card.annualFee?.replace(/[^0-9]/g, '') || '0', 10), // Extract numeric value
+      feeWaiver: card.feeWaiver,
+      annualFeeValue: numericFee, // Store just the numeric value for filtering
       cashback: card.features[0] || "N/A",
       rewardPoints: card.features[1] || "N/A",
       benefits: card.features.slice(2),
@@ -38,7 +49,7 @@ const CompareCreditCards = ({ showAll = false, filters = { category: 'All', annu
   if (showAll && filters.annualFee !== 'All') {
     switch (filters.annualFee) {
       case 'Free':
-        displayedCards = displayedCards.filter(card => card.annualFeeValue === 0);
+        displayedCards = displayedCards.filter(card => card.annualFeeValue === 0 || card.annualFee.toLowerCase().includes('free'));
         break;
       case 'Low':
         displayedCards = displayedCards.filter(card => card.annualFeeValue > 0 && card.annualFeeValue <= 1000);
@@ -98,6 +109,9 @@ const CompareCreditCards = ({ showAll = false, filters = { category: 'All', annu
                   <div className="mb-4">
                     <p className="text-gray-600">Annual Fee</p>
                     <p className="font-semibold">{card.annualFee}</p>
+                    {card.feeWaiver && (
+                      <p className="text-xs text-gray-500 mt-1">{card.feeWaiver}</p>
+                    )}
                   </div>
                   <div className="mb-4">
                     <p className="text-gray-600">Cashback</p>
