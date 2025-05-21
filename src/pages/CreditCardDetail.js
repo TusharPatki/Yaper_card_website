@@ -9,6 +9,7 @@ const CreditCardDetail = () => {
   const { cardSlug } = useParams();
   const [card, setCard] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     // Get all cards and find the one matching the slug
@@ -31,6 +32,16 @@ const CreditCardDetail = () => {
     
     setLoading(false);
   }, [cardSlug]);
+
+  // Handle image loading errors
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
+  // Get a fallback image URL
+  const getFallbackImage = (cardName) => {
+    return `https://via.placeholder.com/600x360?text=${encodeURIComponent(cardName)}`;
+  };
 
   if (loading) {
     return (
@@ -86,9 +97,10 @@ const CreditCardDetail = () => {
           <div className="md:flex">
             <div className="md:w-1/3 bg-gray-100 p-6 flex items-center justify-center">
               <img 
-                src={card.imageUrl} 
+                src={imageError ? getFallbackImage(card.name) : card.imageUrl} 
                 alt={card.name} 
                 className="max-w-full h-auto object-contain"
+                onError={handleImageError}
               />
             </div>
             
