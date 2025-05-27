@@ -86,7 +86,7 @@ const CreditCard = ({ card }) => {
   );
 };
 
-const CompareCreditCards = ({ showAll = false, filters = { category: 'All', annualFee: 'All', rewards: 'All' } }) => {
+const CompareCreditCards = ({ showAll = false, filters = { category: 'All', annualFee: 'All', rewards: 'All', searchQuery: '' } }) => {
   // Get all bank cards from our data files
   const allCards = getAllCards().map(card => {
     // Mark specific cards as trending
@@ -123,6 +123,15 @@ const CompareCreditCards = ({ showAll = false, filters = { category: 'All', annu
 
   // Apply filters to cards
   let displayedCards = showAll ? allCards : allCards.filter(card => card.isTrending);
+  
+  // Apply search query filter
+  if (showAll && filters.searchQuery && filters.searchQuery.trim() !== '') {
+    const searchTerm = filters.searchQuery.toLowerCase().trim();
+    displayedCards = displayedCards.filter(card => 
+      card.name.toLowerCase().includes(searchTerm) || 
+      (card.bank && card.bank.toLowerCase().includes(searchTerm))
+    );
+  }
   
   // Apply category filter
   if (showAll && filters.category !== 'All') {
