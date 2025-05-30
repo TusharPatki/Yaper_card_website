@@ -16,7 +16,6 @@ const Navbar = () => {
           <Link to="/credit-cards" className="hover:text-blue-600">Credit Cards</Link>
           <Link to="/loans" className="hover:text-blue-600">Loans</Link>
           <Link to="/investments" className="hover:text-blue-600">Investments</Link>
-          <Link to="/blog" className="hover:text-blue-600">Blog</Link>
         </div>
       </div>
     </nav>
