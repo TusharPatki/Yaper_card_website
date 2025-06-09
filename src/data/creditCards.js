@@ -647,5 +647,16 @@ export const creditCardsData = [
     annualFee: '₹0 (Lifetime Free)',
     feeWaiver: '',
     link: 'https://t.ly/9R7ap'
+  },
+  {
+    id: 60,
+    name: 'RBL Shoprite',
+    imageUrl: 'https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/07/RBL-Bank-ShopRite-Credit-Card.webp',
+    features: ['5% Value Back on Groceries: Earn 20 reward points per ₹100 spent on groceries, capped at 1,000 points monthly', 'Welcome Bonus: Receive 2,000 reward points upon first transaction within 30 days of card issuance', 'Movie Discounts: Enjoy 10% off (up to ₹100) on BookMyShow movie tickets, up to 15 times annually', 'Fuel Surcharge Waiver: Get a 1% waiver on fuel transactions between ₹500–₹4,000, up to ₹100 per month'],
+    category: 'Shopping',
+    bank: 'RBL Bank',
+    annualFee: '₹500 + GST',
+    feeWaiver: 'Waived on ₹1.5 lakh annual spend',
+    link: 'https://t.ly/pYvxH'
   }
 ];
